@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    overflow-x: hidden;
+    
 }
 
 @keyframes subir {
@@ -151,10 +153,7 @@ body {
 .bg-content-area p {
     font-size: 40px;
     animation: subir 1s ease-out;
-}
-
-.bg-content-area .main-content {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .bg-content-area span {
@@ -168,7 +167,7 @@ body {
 }
 
 .bg-content-area .sub-content {
-    margin-top: 400px;
+    margin-top: 320px;
     line-height: 40px;
     font-size: 25px;
     animation: subir 1s ease-out;
