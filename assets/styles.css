@@ -14,12 +14,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.header-space::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .actual-header{
     width: 100vw;
     height: 70px;
     display: flex;
+    z-index: 2;
 }
 
 .logo-name{
@@ -87,10 +99,45 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: flex-start;
     color: white;
     text-shadow: 2px 2px 4px rgb(53, 53, 53);
 }
 
 .bg-content-area {
+    z-index: 2;
+    line-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bg-content-area p {
+    font-size: 40px;
+}
+
+.bg-content-area .main-content {
+    margin-top: 200px;
+}
+
+.bg-content-area span {
+    font-weight: bold;
     font-size: 50px;
+}
+
+.bg-content-area img {
+    height: 40px;
+    width: 60px;
+}
+
+.bg-content-area .sub-content {
+    margin-top: 250px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.bg-content-area .sub-content img {
+    transform: rotate(90deg);
+    margin-top: 30px;
 }
