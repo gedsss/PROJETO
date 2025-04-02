@@ -203,7 +203,11 @@ body {
 
 
 .escrito-area{
-    background-image: url(images/360_F_339063319_OIpdWi0E2L2Imcru1Oqlaf6vdwlRyFiC.webp);
+    background-color: #141416;
+    border-right: #3F4349;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
     width: 700px;
     height: 100%;
     border: 1px solid #3F4349;
@@ -224,7 +228,7 @@ body {
 
 .escrito-area .content {
     width: 70%;
-    text-align: justify;
+    text-align: center;
     color: rgba(255, 255, 255, 0.644);
     font-size: 20px;
 }
